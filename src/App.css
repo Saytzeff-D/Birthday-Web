@@ -1,0 +1,168 @@
+.vh-100 {
+  min-height: 100dvh !important;
+}
+.candle-light {
+  background-color: #9432B0 !important;
+}
+.text-purple {
+  color: #9432B0 !important;
+}
+.happy-birthday {
+  background-color: #130019 !important;
+}
+.birthday-girl {
+  height: 450px !important;
+  width: 450px !important;
+  /* min-height: 400px !important; */
+}
+@media screen and (max-width: 992px) {
+  .birthday-girl {
+    height: 250px !important;
+    width: 250px !important;
+  }
+  .tolu-video {
+    height: 300px !important;
+    width: 100% !important;
+  }
+}
+.btn-purple {
+  background-color: #9432B0 !important;
+  color: white !important;
+}
+/* MAIN CONTAINER */
+.birthday-banner-container {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+
+  background-image: url("./assets/voice-oops.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* OVERLAY */
+.birthday-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(191, 92, 219, 0.32),
+    rgba(255, 255, 255, 0.32)
+  );
+
+  z-index: 1;
+}
+
+/* CONTENT WRAPPER */
+.birthday-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  padding-bottom: 40px;
+}
+
+/* GIF */
+.push-gif{
+   width: 170px;
+   aspect-ratio: 1/1;
+
+   border-radius: 50%;
+   overflow: hidden;
+
+   object-fit: cover;
+}
+
+.push-gif:hover {
+  transform: scale(1.05);
+}
+
+.push-gif:active {
+  transform: scale(0.95);
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .birthday-banner-container {
+    min-height: 75vh;
+  }
+
+  .push-gif {
+    width: 120px;
+    max-width: 45vw;
+  }
+
+  .birthday-content {
+    padding-bottom: 28px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .birthday-banner-container {
+    min-height: 65vh;
+  }
+
+  .push-gif {
+    width: 95px;
+    max-width: 50vw;
+  }
+
+  .birthday-content {
+    padding-bottom: 22px;
+  }
+}
+.happy-birthday{
+    background: #16001F;
+    overflow: hidden;
+    min-height: 100dvh;
+}
+
+.birthday-girl{
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    object-fit: contain;
+
+    position: relative;
+    right: -30px;
+    bottom: 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+
+    .birthday-girl{
+        max-width: 320px;
+        right: -10px;
+        margin-top: 20px;
+    }
+}
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
