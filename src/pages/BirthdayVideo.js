@@ -19,7 +19,7 @@ const BirthdayVideo = () => {
 
   const messageMe = () => {
     setOpen(false);
-    window.open('https://wa.me/message/5Z6Q2K7X5Z3MO1', '_blank');
+    window.open('https://wa.me/message/FH7P3MY7QJWBD1', '_blank');
 
     if (videoRef.current) {
       videoRef.current.currentTime = 0;
