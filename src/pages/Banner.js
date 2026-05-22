@@ -10,7 +10,7 @@ const BirthdayBanner = () => {
       <div className="birthday-overlay"></div>
 
       {/* Bottom GIF Content */}
-      <div className="birthday-content" onClick={()=>navigate('/surprise')}>
+      <div className="birthday-content cursor-pointer" onClick={()=>navigate('/surprise')}>
         <img
           src={PushButton}
           alt="Push Button"
