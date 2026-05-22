@@ -1,15 +1,15 @@
 import React, { useRef, useState } from "react";
-
 import {
   Dialog,
   DialogContent,
   DialogTitle,
   Button,
 } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const BirthdayVideo = () => {
   const videoRef = useRef(null);
-
+  const navigate = useNavigate()
   const [open, setOpen] = useState(false);
 
   // When video ends
@@ -20,11 +20,11 @@ const BirthdayVideo = () => {
   const messageMe = () => {
     setOpen(false);
     window.open('https://wa.me/message/FH7P3MY7QJWBD1', '_blank');
-
-    if (videoRef.current) {
-      videoRef.current.currentTime = 0;
-      videoRef.current.play();
-    }
+    navigate('/')
+    // if (videoRef.current) {
+    //   videoRef.current.currentTime = 0;
+    //   videoRef.current.play();
+    // }
   };
 
   return (
