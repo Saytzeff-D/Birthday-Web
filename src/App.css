@@ -4,6 +4,9 @@
 .candle-light {
   background-color: #9432B0 !important;
 }
+.cursor-pointer {
+  cursor: pointer !important;
+}
 .text-purple {
   color: #9432B0 !important;
 }
